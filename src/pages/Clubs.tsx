@@ -11,12 +11,12 @@ const Clubs = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Our <span className="text-green-400">Clubs</span>
+            Our <span className="text-matrix">Clubs</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Discover the three pillars that make up The Matrix Clan
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-matrix-400 to-matrix-500 mx-auto mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -25,7 +25,7 @@ const Clubs = () => {
               <GlassCard className="p-8 h-full group cursor-pointer transform hover:scale-105">
                 <div className="text-center">
                   <div 
-                    className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center font-bold text-2xl text-black transition-all duration-300 group-hover:shadow-xl bg-gradient-to-r from-green-400 to-green-500"
+                    className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center font-bold text-2xl text-black transition-all duration-300 group-hover:shadow-xl bg-gradient-to-r from-matrix-400 to-matrix-500"
                     style={{ 
                       boxShadow: `0 0 30px rgba(0, 255, 65, 0.3)`
                     }}
@@ -36,7 +36,7 @@ const Clubs = () => {
                   <p className="text-gray-300 group-hover:text-white transition-colors duration-300 line-clamp-3">
                     {club.about}
                   </p>
-                  <div className="mt-6 text-sm font-medium text-green-400">
+                  <div className="mt-6 text-sm font-medium text-matrix">
                     Learn More →
                   </div>
                 </div>

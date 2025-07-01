@@ -8,19 +8,19 @@ const Home = () => {
       title: 'Gallery',
       description: 'Explore our visual journey',
       url: 'https://gallery.thematrixclan.com',
-      color: 'from-green-400 to-green-500'
+      color: 'from-matrix-400 to-matrix-500'
     },
     {
       title: 'Legacy',
       description: 'Our rich history and achievements',
       url: 'https://legacy.thematrixclan.com',
-      color: 'from-green-400 to-green-500'
+      color: 'from-matrix-400 to-matrix-500'
     },
     {
       title: 'Register for MEP 2025',
       description: 'Secure your spot at the symposium',
       url: 'https://mep.thematrixclan.com',
-      color: 'from-green-400 to-green-500'
+      color: 'from-matrix-400 to-matrix-500'
     }
   ];
 
@@ -32,11 +32,11 @@ const Home = () => {
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               The Matrix Clan
-              <span className="block text-3xl md:text-5xl text-green-400 mt-4">
+              <span className="block text-3xl md:text-5xl text-matrix mt-4">
                 presents
               </span>
             </h1>
-            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-8">
+            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-matrix-400 to-matrix-500 bg-clip-text text-transparent mb-8">
               MEP 2025
             </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
 
           {/* External Links */}
-          <div className="grid md:grid-cols-3 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             {externalLinks.map((link, index) => (
               <GlassCard key={link.title} className="p-6 group cursor-pointer transform hover:scale-105">
                 <a
@@ -68,9 +68,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Matrix Rain Effect (CSS Only) */}
-      <div className="fixed inset-0 pointer-events-none opacity-10 z-0">
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_98px,rgba(0,255,65,0.1)_100px)] animate-pulse" />
+      {/* Responsive Matrix Rain Effect */}
+      <div className="fixed inset-0 pointer-events-none opacity-5 md:opacity-10 z-0">
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_48px,rgba(0,255,65,0.1)_50px)] md:bg-[repeating-linear-gradient(90deg,transparent,transparent_98px,rgba(0,255,65,0.1)_100px)] animate-pulse" />
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_48px,rgba(0,255,65,0.05)_50px)] md:bg-[repeating-linear-gradient(0deg,transparent,transparent_98px,rgba(0,255,65,0.05)_100px)] animate-pulse" />
       </div>
     </div>
   );
