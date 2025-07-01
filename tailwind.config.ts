@@ -62,6 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Matrix green colors
+				matrix: {
+					DEFAULT: '#00FF41',
+					50: '#E6FFE6',
+					100: '#CCFFCC',
+					200: '#99FF99',
+					300: '#66FF66',
+					400: '#33FF33',
+					500: '#00FF41',
+					600: '#00CC34',
+					700: '#009927',
+					800: '#00661A',
+					900: '#00330D'
 				}
 			},
 			borderRadius: {

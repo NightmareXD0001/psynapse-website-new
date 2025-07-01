@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,6 +54,11 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Matrix Green Variables */
+    --matrix-green: 123 100% 50%;
+    --matrix-green-dark: 123 100% 40%;
+    --matrix-green-light: 123 100% 60%;
   }
 
   .dark {
@@ -102,4 +108,21 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Matrix Green Utility Classes */
+.text-matrix {
+  color: #00FF41;
+}
+
+.bg-matrix {
+  background-color: #00FF41;
+}
+
+.border-matrix {
+  border-color: #00FF41;
+}
+
+.shadow-matrix {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
 }
