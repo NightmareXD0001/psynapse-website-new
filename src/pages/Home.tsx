@@ -8,19 +8,19 @@ const Home = () => {
       title: 'Gallery',
       description: 'Explore our visual journey',
       url: 'https://gallery.thematrixclan.com',
-      color: 'from-green-400 to-emerald-500'
+      color: 'from-green-400 to-green-500'
     },
     {
       title: 'Legacy',
       description: 'Our rich history and achievements',
       url: 'https://legacy.thematrixclan.com',
-      color: 'from-blue-400 to-cyan-500'
+      color: 'from-green-400 to-green-500'
     },
     {
       title: 'Register for MEP 2025',
       description: 'Secure your spot at the symposium',
       url: 'https://mep.thematrixclan.com',
-      color: 'from-purple-400 to-pink-500'
+      color: 'from-green-400 to-green-500'
     }
   ];
 
@@ -36,7 +36,7 @@ const Home = () => {
                 presents
               </span>
             </h1>
-            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-8">
+            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-8">
               MEP 2025
             </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -55,7 +55,7 @@ const Home = () => {
                   className="block h-full"
                 >
                   <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${link.color} mb-4 mx-auto flex items-center justify-center group-hover:shadow-lg transition-all duration-300`}>
-                    <ArrowRight className="text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                    <ArrowRight className="text-black transform group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{link.title}</h3>
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">

@@ -34,7 +34,7 @@ export const clubsData = {
     },
     ecomm: {
       name: "Ecomm",
-      color: "#008afb",
+      color: "#00ff41",
       about: "Ecomm represents the business and entrepreneurial spirit of The Matrix Clan. We focus on e-commerce innovations, digital marketing strategies, and the intersection of technology with business. Our mission is to create sustainable digital solutions for modern commerce.",
       members: [
         {
@@ -60,7 +60,7 @@ export const clubsData = {
     },
     psynapse: {
       name: "Psynapse",
-      color: "#CC6CE7",
+      color: "#00ff41",
       about: "Psynapse bridges the gap between psychology and technology, exploring cognitive computing, user experience design, and the human-computer interface. We investigate how technology can enhance human potential and create more intuitive digital experiences.",
       members: [
         {
@@ -93,27 +93,6 @@ export const clubsData = {
       club: "all",
       description: "The flagship annual event bringing together Matrix, Ecomm, and Psynapse for an unforgettable technological showcase.",
       featured: true
-    },
-    {
-      id: 2,
-      title: "Matrix Code Championship",
-      date: "2025-02-20",
-      club: "matrix",
-      description: "Competitive programming and algorithm challenges for the next generation of coders."
-    },
-    {
-      id: 3,
-      title: "Ecomm Business Pitch",
-      date: "2025-02-28",
-      club: "ecomm",
-      description: "Student entrepreneurs present innovative business solutions and digital commerce ideas."
-    },
-    {
-      id: 4,
-      title: "Psynapse UX Workshop",
-      date: "2025-03-05",
-      club: "psynapse",
-      description: "Interactive workshop on user experience design and cognitive computing applications."
     }
   ]
 };
