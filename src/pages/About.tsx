@@ -7,19 +7,19 @@ const About = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About <span className="text-matrix">The Matrix Clan</span>
+            About <span className="text-buzz">EcommBuzz</span>
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-matrix-400 to-matrix-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-buzz to-blue-400 mx-auto"></div>
         </div>
 
         <div className="space-y-8">
           <GlassCard className="p-8 md:p-12">
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-lg md:text-xl">
-                Founded in 2000, the Matrix Clan at Mount St. Mary School, Delhi Cantt., has evolved into a standout technology club in Delhi. Primarily composed of students from classes XI and XII, it also actively involves all Marians in exploring new technological frontiers.
+                The EcommBuzz is the prestigious economics society of Mount St. Mary's School, Delhi Cantt. This dynamic club is designed for students with a keen interest in economics and business and offers them a platform to test and expand their existing knowledge.
               </p>
               <p className="text-lg md:text-xl">
-                The club's strong presence at inter-school events underscores its reputation for technological prowess and innovation, consistently making an impact across the city.
+                By fostering a community of like-minded individuals, the club encourages collaborative learning and intellectual growth among its members.
               </p>
             </div>
           </GlassCard>
@@ -27,10 +27,21 @@ const About = () => {
           <GlassCard className="p-8 md:p-12">
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-lg md:text-xl">
-                Central to its activities is <span className="text-matrix font-semibold">Matrix Ecomm Psynapse</span>, an annual event co-founded by the club, which has become a cornerstone of the school's technological calendar. This event not only showcases the talents and innovations of students but also serves as a platform for them to demonstrate their skills and creativity.
+                Central to club's mission is the development of students' interest in the <span className="text-buzz font-semibold">Economics and Business</span> fields. The club achieves this through a variety of engaging activities such as quizzes, debates, paper presentations, business pitches, and economic analyses.
               </p>
               <p className="text-lg md:text-xl">
-                Beyond organizing events, the Matrix Clan plays a pivotal role in supporting various technological and design initiatives within the school, contributing significantly to its technological environment.
+                These activities not only provide practical experience but also help students hone their analytical and critical thinking skills, preparing them for future academic and professional endeavors.
+              </p>
+            </div>
+          </GlassCard>
+
+          <GlassCard className="p-8 md:p-12">
+            <div className="space-y-6 text-gray-300 leading-relaxed">
+              <p className="text-lg md:text-xl">
+                One of the defining features of the EcommBuzz club is its enduring legacy at Mount St. Mary's School. While the membership may change annually, the buzz of excitement and intellectual curiosity never dies.
+              </p>
+              <p className="text-lg md:text-xl">
+                The club continues to thrive year after year, making EcommBuzz one of the most established and respected societies within the school.
               </p>
             </div>
           </GlassCard>
@@ -38,8 +49,8 @@ const About = () => {
           <GlassCard className="p-8 md:p-12 text-center">
             <div className="space-y-4">
               <h2 className="text-2xl md:text-3xl font-bold text-white">Our Mission</h2>
-              <blockquote className="text-xl md:text-2xl text-matrix font-medium italic">
-                "To make a dent in the universe, one keystroke at a time."
+              <blockquote className="text-xl md:text-2xl text-buzz font-medium italic">
+                "Fostering economic minds, one idea at a time."
               </blockquote>
             </div>
           </GlassCard>

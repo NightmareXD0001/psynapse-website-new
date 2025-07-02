@@ -55,10 +55,10 @@ All colors MUST be HSL.
 
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Matrix Green Variables */
-    --matrix-green: 123 100% 50%;
-    --matrix-green-dark: 123 100% 40%;
-    --matrix-green-light: 123 100% 60%;
+    /* EcommBuzz Blue Variables */
+    --buzz-blue: 208 100% 51%;
+    --buzz-blue-dark: 208 100% 41%;
+    --buzz-blue-light: 208 100% 61%;
   }
 
   .dark {
@@ -110,19 +110,19 @@ All colors MUST be HSL.
   }
 }
 
-/* Matrix Green Utility Classes */
-.text-matrix {
-  color: #00FF41;
+/* EcommBuzz Blue Utility Classes */
+.text-buzz {
+  color: #008AFB;
 }
 
-.bg-matrix {
-  background-color: #00FF41;
+.bg-buzz {
+  background-color: #008AFB;
 }
 
-.border-matrix {
-  border-color: #00FF41;
+.border-buzz {
+  border-color: #008AFB;
 }
 
-.shadow-matrix {
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+.shadow-buzz {
+  box-shadow: 0 0 20px rgba(0, 138, 251, 0.3);
 }

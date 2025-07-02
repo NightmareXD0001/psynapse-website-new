@@ -63,19 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Matrix green colors
-				matrix: {
-					DEFAULT: '#00FF41',
-					50: '#E6FFE6',
-					100: '#CCFFCC',
-					200: '#99FF99',
-					300: '#66FF66',
-					400: '#33FF33',
-					500: '#00FF41',
-					600: '#00CC34',
-					700: '#009927',
-					800: '#00661A',
-					900: '#00330D'
+				// EcommBuzz blue colors
+				buzz: {
+					DEFAULT: '#008AFB',
+					50: '#E6F3FF',
+					100: '#CCE7FF',
+					200: '#99CFFF',
+					300: '#66B7FF',
+					400: '#339FFF',
+					500: '#008AFB',
+					600: '#006EC9',
+					700: '#005297',
+					800: '#003764',
+					900: '#001B32'
 				}
 			},
 			borderRadius: {
