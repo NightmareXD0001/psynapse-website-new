@@ -55,10 +55,10 @@ All colors MUST be HSL.
 
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* EcommBuzz Blue Variables */
-    --buzz-blue: 208 100% 51%;
-    --buzz-blue-dark: 208 100% 41%;
-    --buzz-blue-light: 208 100% 61%;
+    /* Psynapse Lilac Variables */
+    --psynapse-lilac: 270 50% 70%;
+    --psynapse-lilac-dark: 270 50% 60%;
+    --psynapse-lilac-light: 270 50% 80%;
   }
 
   .dark {
@@ -110,19 +110,19 @@ All colors MUST be HSL.
   }
 }
 
-/* EcommBuzz Blue Utility Classes */
-.text-buzz {
-  color: #008AFB;
+/* Psynapse Lilac Utility Classes */
+.text-psynapse {
+  color: #B794F6;
 }
 
-.bg-buzz {
-  background-color: #008AFB;
+.bg-psynapse {
+  background-color: #B794F6;
 }
 
-.border-buzz {
-  border-color: #008AFB;
+.border-psynapse {
+  border-color: #B794F6;
 }
 
-.shadow-buzz {
-  box-shadow: 0 0 20px rgba(0, 138, 251, 0.3);
+.shadow-psynapse {
+  box-shadow: 0 0 20px rgba(183, 148, 246, 0.3);
 }

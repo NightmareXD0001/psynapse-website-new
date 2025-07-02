@@ -63,19 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// EcommBuzz blue colors
-				buzz: {
-					DEFAULT: '#008AFB',
-					50: '#E6F3FF',
-					100: '#CCE7FF',
-					200: '#99CFFF',
-					300: '#66B7FF',
-					400: '#339FFF',
-					500: '#008AFB',
-					600: '#006EC9',
-					700: '#005297',
-					800: '#003764',
-					900: '#001B32'
+				// Psynapse lilac colors
+				psynapse: {
+					DEFAULT: '#B794F6',
+					50: '#F3EFFF',
+					100: '#E9DDFF',
+					200: '#D6C2FF',
+					300: '#C4A6FF',
+					400: '#B794F6',
+					500: '#9F7AEA',
+					600: '#8B5CF6',
+					700: '#7C3AED',
+					800: '#6B46C1',
+					900: '#553C9A'
 				}
 			},
 			borderRadius: {

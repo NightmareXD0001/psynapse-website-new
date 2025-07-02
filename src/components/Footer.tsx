@@ -13,11 +13,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {/* Logo/Brand */}
             <div className="text-center md:text-left">
-              <Link to="/" className="text-2xl font-bold text-white hover:text-buzz transition-colors">
-                EcommBuzz
+              <Link to="/" className="text-2xl font-bold text-white hover:text-psynapse transition-colors">
+                Psynapse
               </Link>
               <p className="text-gray-400 text-sm mt-2">
-                Economics Society - Mount St. Mary's School
+                Psychology Society - Mount St. Mary's School
               </p>
             </div>
 
@@ -28,7 +28,7 @@ const Footer = () => {
                   <Link
                     key={link.name}
                     to={link.path}
-                    className="text-gray-300 hover:text-buzz transition-colors text-sm"
+                    className="text-gray-300 hover:text-psynapse transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
-                © 2024 EcommBuzz. All rights reserved.
+                © 2024 Psynapse. All rights reserved.
               </p>
             </div>
           </div>

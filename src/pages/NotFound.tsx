@@ -19,8 +19,8 @@ const NotFound = () => {
       <div className="max-w-2xl mx-auto text-center">
         <GlassCard className="p-12">
           <div className="mb-8">
-            <div className="text-8xl font-bold text-buzz mb-4">404</div>
-            <div className="w-24 h-1 bg-gradient-to-r from-buzz to-blue-400 mx-auto mb-6"></div>
+            <div className="text-8xl font-bold text-psynapse mb-4">404</div>
+            <div className="w-24 h-1 bg-gradient-to-r from-psynapse to-purple-400 mx-auto mb-6"></div>
           </div>
           
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -28,7 +28,7 @@ const NotFound = () => {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            The page you're looking for doesn't exist in EcommBuzz. 
+            The page you're looking for doesn't exist in Psynapse. 
             <br className="hidden md:block" />
             It might have been moved, deleted, or you entered the wrong URL.
           </p>
@@ -36,7 +36,7 @@ const NotFound = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/" 
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-buzz to-blue-400 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-buzz/30 transition-all duration-300"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-psynapse to-purple-400 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-psynapse/30 transition-all duration-300"
             >
               <Home className="mr-2" size={20} />
               Return Home
@@ -53,9 +53,9 @@ const NotFound = () => {
         </GlassCard>
       </div>
       
-      {/* Blue Digital Background */}
+      {/* Lilac Digital Background */}
       <div className="fixed inset-0 pointer-events-none opacity-5 z-0">
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_98px,rgba(0,138,251,0.1)_100px)] animate-pulse" />
+        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_98px,rgba(183,148,246,0.1)_100px)] animate-pulse" />
       </div>
     </div>
   );
