@@ -7,19 +7,19 @@ const Home = () => {
     {
       title: 'Gallery',
       description: 'Explore our visual journey',
-      url: 'https://gallery.ecommbuzz.com',
+      url: 'https://gallery.thematrixclan.com',
       icon: Users
     },
     {
       title: 'Legacy',
       description: 'Our rich history and achievements',
-      url: 'https://legacy.ecommbuzz.com',
+      url: 'https://legacy.thematrixclan.com/ecomm',
       icon: Zap
     },
     {
-      title: 'Join EcommBuzz',
-      description: 'Become part of our economics society',
-      url: 'https://join.ecommbuzz.com',
+      title: 'Register for MEP 2025',
+      description: 'Secure your spot at the symposium EcommBuzz',
+      url: 'https://mep.thematrixclan.com',
       icon: Calendar
     }
   ];
