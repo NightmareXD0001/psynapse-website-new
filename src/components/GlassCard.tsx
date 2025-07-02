@@ -1,13 +1,14 @@
 
-import { ReactNode } from 'react';
+import { ReactNode, CSSProperties } from 'react';
 
 interface GlassCardProps {
   children: ReactNode;
   className?: string;
   hover?: boolean;
+  style?: CSSProperties;
 }
 
-const GlassCard = ({ children, className = '', hover = true }: GlassCardProps) => {
+const GlassCard = ({ children, className = '', hover = true, style }: GlassCardProps) => {
   return (
     <div
       className={`
@@ -16,6 +17,7 @@ const GlassCard = ({ children, className = '', hover = true }: GlassCardProps) =
         transition-all duration-500 ease-out
         ${className}
       `}
+      style={style}
     >
       {children}
     </div>
