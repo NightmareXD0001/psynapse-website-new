@@ -12,7 +12,7 @@ const ClubDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center text-white">
           <h1 className="text-4xl font-bold mb-4">Club Not Found</h1>
-          <Link to="/clubs" className="text-green-400 hover:underline">
+          <Link to="/clubs" className="text-buzz hover:underline">
             Back to Clubs
           </Link>
         </div>
@@ -28,7 +28,7 @@ const ClubDetail = () => {
         {/* Back Button */}
         <Link 
           to="/clubs" 
-          className="inline-flex items-center text-gray-300 hover:text-green-400 transition-colors mb-8"
+          className="inline-flex items-center text-gray-300 hover:text-buzz transition-colors mb-8"
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Clubs
@@ -37,10 +37,9 @@ const ClubDetail = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div 
-            className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center font-bold text-4xl text-black transition-all duration-300"
+            className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center font-bold text-4xl text-white transition-all duration-300 bg-gradient-to-r from-buzz to-blue-400"
             style={{ 
-              backgroundColor: club.color,
-              boxShadow: `0 0 40px ${club.color}60`
+              boxShadow: `0 0 40px rgba(0, 138, 251, 0.4)`
             }}
           >
             {club.name[0]}
@@ -48,7 +47,7 @@ const ClubDetail = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             {club.name}
           </h1>
-          <div className="w-24 h-1 mx-auto" style={{ backgroundColor: club.color }}></div>
+          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-buzz to-blue-400"></div>
         </div>
 
         {/* About Section */}
@@ -69,12 +68,10 @@ const ClubDetail = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-32 h-32 rounded-full mx-auto object-cover border-2 group-hover:border-opacity-80 transition-all duration-300"
-                    style={{ borderColor: club.color }}
+                    className="w-32 h-32 rounded-full mx-auto object-cover border-2 border-buzz group-hover:border-blue-400 transition-all duration-300"
                   />
                   <div 
-                    className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"
-                    style={{ backgroundColor: club.color }}
+                    className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 bg-buzz"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
@@ -92,15 +89,14 @@ const ClubDetail = () => {
               <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
               <a 
                 href={`mailto:${club.contact.email}`}
-                className="hover:underline transition-colors"
-                style={{ color: club.color }}
+                className="text-buzz hover:text-blue-400 hover:underline transition-colors"
               >
                 {club.contact.email}
               </a>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-white mb-2">Discord</h3>
-              <span style={{ color: club.color }}>{club.contact.discord}</span>
+              <span className="text-buzz">{club.contact.discord}</span>
             </div>
           </div>
         </GlassCard>
