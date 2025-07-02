@@ -13,7 +13,7 @@ const Home = () => {
     {
       title: 'Legacy',
       description: 'Our rich history and achievements',
-      url: 'https://legacy.thematrixclan.com/ecomm',
+      url: 'https://legacy.thematrixclan.com/psynapse',
       icon: Zap
     },
     {
@@ -48,8 +48,7 @@ const Home = () => {
           <div className="mb-16 animate-fade-in">
             <div className="mb-8">
               <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
-                PSY
-                <span className="block text-psynapse">NAPSE</span>
+                <span className="block text-psynapse">PSYNAPSE</span>
               </h1>
               <div className="w-32 h-1 bg-gradient-to-r from-psynapse to-purple-400 mx-auto mb-6"></div>
             </div>
@@ -72,7 +71,7 @@ const Home = () => {
             <GlassCard className="inline-block p-8 hover:scale-105 transition-all duration-500">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Join Psynapse?</h3>
               <a
-                href="https://join.psynapse.com"
+                href="https://mep.thematrixclan.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-psynapse to-purple-400 text-white font-bold py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-psynapse/50 transition-all duration-300 text-lg"
