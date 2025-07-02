@@ -1,5 +1,5 @@
 
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Zap, Users, Calendar } from 'lucide-react';
 import GlassCard from '../components/GlassCard';
 
 const Home = () => {
@@ -8,71 +8,116 @@ const Home = () => {
       title: 'Gallery',
       description: 'Explore our visual journey',
       url: 'https://gallery.thematrixclan.com',
-      color: 'from-matrix-400 to-matrix-500'
+      icon: Users
     },
     {
       title: 'Legacy',
       description: 'Our rich history and achievements',
       url: 'https://legacy.thematrixclan.com',
-      color: 'from-matrix-400 to-matrix-500'
+      icon: Zap
     },
     {
       title: 'Register for MEP 2025',
       description: 'Secure your spot at the symposium',
       url: 'https://mep.thematrixclan.com',
-      color: 'from-matrix-400 to-matrix-500'
+      icon: Calendar
     }
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen relative">
+      {/* Matrix Digital Rain Background */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 opacity-10">
+          {/* Vertical lines */}
+          <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_24px,rgba(0,255,65,0.1)_26px)]" />
+          {/* Horizontal lines */}
+          <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_24px,rgba(0,255,65,0.05)_26px)]" />
+        </div>
+        
+        {/* Animated Matrix Code */}
+        <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-matrix/20 to-transparent animate-pulse" style={{ animationDelay: '0s' }} />
+        <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-matrix/15 to-transparent animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-0 left-3/4 w-px h-full bg-gradient-to-b from-transparent via-matrix/25 to-transparent animate-pulse" style={{ animationDelay: '2s' }} />
+      </div>
+
       {/* Hero Section */}
-      <section className="flex-1 flex items-center justify-center px-4 py-20">
-        <div className="text-center max-w-4xl mx-auto">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              The Matrix Clan
-              <span className="block text-3xl md:text-5xl text-matrix mt-4">
-                presents
-              </span>
-            </h1>
-            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-matrix-400 to-matrix-500 bg-clip-text text-transparent mb-8">
-              MEP 2025
+      <section className="relative z-10 min-h-screen flex items-center justify-center px-4">
+        <div className="text-center max-w-6xl mx-auto">
+          {/* Main Title */}
+          <div className="mb-16 animate-fade-in">
+            <div className="mb-8">
+              <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
+                THE MATRIX
+                <span className="block text-matrix">CLAN</span>
+              </h1>
+              <div className="w-32 h-1 bg-gradient-to-r from-matrix to-green-400 mx-auto mb-6"></div>
             </div>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Where technology meets innovation. Join us for the most anticipated symposium of the year.
+            
+            <div className="mb-8">
+              <p className="text-2xl md:text-3xl text-gray-300 mb-4">presents</p>
+              <div className="text-7xl md:text-9xl font-bold bg-gradient-to-r from-matrix via-green-400 to-matrix bg-clip-text text-transparent mb-6 animate-pulse">
+                MEP 2025
+              </div>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-12">
+              Where <span className="text-matrix font-semibold">technology</span> meets{' '}
+              <span className="text-matrix font-semibold">innovation</span>. Join us for the most anticipated symposium of the year.
             </p>
           </div>
 
-          {/* External Links */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-            {externalLinks.map((link, index) => (
-              <GlassCard key={link.title} className="p-6 group cursor-pointer transform hover:scale-105">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block h-full"
+          {/* CTA Section */}
+          <div className="mb-20">
+            <GlassCard className="inline-block p-8 hover:scale-105 transition-all duration-500">
+              <h3 className="text-2xl font-bold text-white mb-4">Ready to Enter the Matrix?</h3>
+              <a
+                href="https://mep.thematrixclan.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-matrix to-green-400 text-black font-bold py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-matrix/50 transition-all duration-300 text-lg"
+              >
+                Register Now
+                <ArrowRight className="transform group-hover:translate-x-1 transition-transform" />
+              </a>
+            </GlassCard>
+          </div>
+
+          {/* Links Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {externalLinks.map((link, index) => {
+              const IconComponent = link.icon;
+              return (
+                <GlassCard 
+                  key={link.title} 
+                  className="p-8 group cursor-pointer hover:scale-105 hover:bg-white/10 transition-all duration-500"
+                  style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${link.color} mb-4 mx-auto flex items-center justify-center group-hover:shadow-lg transition-all duration-300`}>
-                    <ArrowRight className="text-black transform group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{link.title}</h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {link.description}
-                  </p>
-                </a>
-              </GlassCard>
-            ))}
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full text-center"
+                  >
+                    <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-matrix/20 to-green-400/20 rounded-full flex items-center justify-center group-hover:from-matrix/40 group-hover:to-green-400/40 transition-all duration-300">
+                      <IconComponent className="text-matrix w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-matrix transition-colors duration-300">
+                      {link.title}
+                    </h3>
+                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
+                      {link.description}
+                    </p>
+                  </a>
+                </GlassCard>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Responsive Matrix Rain Effect */}
-      <div className="fixed inset-0 pointer-events-none opacity-5 md:opacity-10 z-0">
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_48px,rgba(0,255,65,0.1)_50px)] md:bg-[repeating-linear-gradient(90deg,transparent,transparent_98px,rgba(0,255,65,0.1)_100px)] animate-pulse" />
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_48px,rgba(0,255,65,0.05)_50px)] md:bg-[repeating-linear-gradient(0deg,transparent,transparent_98px,rgba(0,255,65,0.05)_100px)] animate-pulse" />
-      </div>
+      {/* Bottom Glow Effect */}
+      <div className="fixed bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-matrix/5 to-transparent pointer-events-none" />
     </div>
   );
 };
